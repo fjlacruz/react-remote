@@ -1,12 +1,19 @@
+import { useState } from 'react'
+
 import './App.css'
-import Header from './Header'
+import { Button } from './components/Button'
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <>
-      <h1>MF Remote</h1>
-      <Header />
-    </>
+    <div>
+      <div></div>
+      <h1>Remote</h1>
+      <div className="card">
+        <Button />
+      </div>
+    </div>
   )
 }
 
